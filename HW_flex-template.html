@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDP 285 Week 4 HW</title>
+    <style>
+        .flex{
+            display: flex;
+        }
+        #container{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 249, 239);
+        }
+        .card{
+            flex-direction: column;
+            background-color: white;
+            width: 450px;
+            height: 550px;
+        }
+
+        h2 {
+           color: rgb(224, 116, 116);
+           margin-top:-15px;
+           font-size: 22px;
+        }
+
+        .interactivity{
+            flex-direction: row;
+            justify-content: center;
+            gap: 200px;
+            align-items: flex-end;
+        }
+        .interactivity--stats{
+           margin-bottom: 50px;
+            color: black;
+        }
+        .interactivity a{
+            background-color: rgb(224, 116, 116);
+            color: white;
+            padding: 15px;
+        }
+        .likes {
+            flex-direction: column;
+        }
+
+        .likes p{
+            margin: 3px;
+            
+        }
+
+        .content {
+            margin-left: 30px;
+        }
+        img {
+            width: 450px;
+            height: 550px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container" class="flex">
+        <div class="card flex">
+            <img src="assets/Chicago.png" alt="Chicago city pic" />
+            <div class="content">
+                <h1>The Second City</h1>
+                <h2>City of a Big Shoulders</h2>
+                <p>Chicago is the home of the blues and the truth<br> of jazz, the heart of comedy and the idea of the<br> skyscraper, it's a city with a swagger, but<br> without the surliness or even the fake smiles<br> found in other cities of its size.</p>
+            </div>
+            <div class="interactivity flex">
+                <div class="interactivity--stats flex">
+                <a href="">Read Article</a>
+                </div>
+                <div class="interactivity--stats flex">
+                    <div class="likes flex">
+                        <p>16 comments</p>
+                        <p>322 likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card flex">
+            <img src="assets/prague.png" alt="Prague city pic" />
+            <div class="content">
+                <h1>The Mother City</h1>
+                <h2>City of a Hundred Spires</h2>
+                <p>Prague is the cpaital and largest city of the<br> Czech Republic. The city's historic buildings<br> and narrow, winding streets are testamnet to its<br> centuries-old role as capital of the historic region<br> Bohemia.</p>
+            </div>
+            <div class="interactivity flex">
+                <div class="interactivity--stats flex">
+                <a href="">Read Article</a>
+                </div>
+                <div class="interactivity--stats flex">
+                    <div class="likes flex">
+                        <p>22 comments</p>
+                        <p>417 likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
